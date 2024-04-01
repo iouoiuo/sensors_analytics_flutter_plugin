@@ -595,7 +595,7 @@ public class SensorsAnalyticsFlutterPlugin implements FlutterPlugin, MethodCallH
             if (javaScriptBridge != null && (boolean) javaScriptBridge) {
                 configOptions.enableJavaScriptBridge(jellybean);
             }
-
+            configOptions.enableTrackAppCrash();
             Object visualizedConfig = map.get("visualized");
             if (visualizedConfig != null) {
                 Map visualizedConfigMap = (Map) visualizedConfig;
